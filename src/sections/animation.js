@@ -25,3 +25,19 @@ export const zoomInVariants = {
     },
   },
 };
+
+export const cardHover = {
+  rest: { scale: 1, boxShadow: "0 2px 10px rgba(0,0,0,0.1)" },
+  hover: {
+    scale: 1.03,
+    boxShadow: "0 8px 20px rgba(0,0,0,0.15)",
+    transition: { type: "spring", stiffness: 200, damping: 15 },
+  },
+};
+
+// varian khusus slider kanan kiri
+export const slideVariants = {
+  enterRight: { x: 100, opacity: 0 },
+  center: { x: 0, opacity: 1, transition: { duration: 0.5 } },
+  exitLeft: { x: -100, opacity: 0, transition: { duration: 0.5 } },
+};

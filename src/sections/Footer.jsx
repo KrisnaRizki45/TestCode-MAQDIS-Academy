@@ -1,103 +1,147 @@
 import React, { useState, useEffect, useRef } from "react";
-import { FaCopyright, FaWhatsapp, FaArrowUp, FaTiktok } from "react-icons/fa";
+import { FaWhatsapp, FaArrowUp, FaTiktok } from "react-icons/fa";
 import { FaInstagram, FaLinkedin } from "react-icons/fa6";
 import { HiLocationMarker } from "react-icons/hi";
-import { MdComputer } from "react-icons/md";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";  
+import { Link as RouterLink, useLocation } from "react-router-dom";
+import logo from "../assets/logo-arsa.png";
 
 const Footer = () => {
   const [showScroll, setShowScroll] = useState(false);
   const footerRef = useRef(null);
+  const location = useLocation();
 
+  // Observer untuk tombol scroll top
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => setShowScroll(entries[0].isIntersecting),
       { threshold: 0.1 }
     );
-
     if (footerRef.current) observer.observe(footerRef.current);
     return () => {
       if (footerRef.current) observer.unobserve(footerRef.current);
     };
   }, []);
 
+  // Auto scroll ke hash setelah pindah halaman
+  useEffect(() => {
+    if (location.hash) {
+      const el = document.getElementById(location.hash.replace("#", ""));
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 200);
+      }
+    }
+  }, [location]);
+
+  // Helper → pakai ScrollLink kalau di home, RouterLink kalau di halaman lain
+  const ScrollOrRoute = ({ to, children }) => {
+    if (location.pathname === "/") {
+      return (
+        <ScrollLink
+          to={to}
+          smooth={true}
+          offset={-100}
+          duration={500}
+          className="hover:text-blue-500 transition-colors cursor-pointer"
+        >
+          {children}
+        </ScrollLink>
+      );
+    }
+    return (
+      <RouterLink
+        to={`/#${to}`}
+        className="hover:text-blue-500 transition-colors cursor-pointer"
+      >
+        {children}
+      </RouterLink>
+    );
+  };
+
   return (
     <>
       {/* Footer */}
-      <div ref={footerRef} className="bg-gray-100 text-black">
+      <footer ref={footerRef} className="bg-white/5 text-gray-300">
         <div className="container mx-auto px-6">
-          {/* Grid Utama */}
-          <div className="grid md:grid-cols-4 gap-8 py-8 border-t border-gray-300/50">
+          <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-8 py-10 border-t border-gray-700/50 text-left">
+            
             {/* Brand Info */}
             <div className="space-y-4">
-              <div className="flex items-center gap-2 font-bold uppercase text-xl">
-                <MdComputer className="text-blue-600 text-3xl" />
-                <p>PT. Arsa Dalu Kreasi</p>
+              <div className="flex items-center gap-2 font-bold uppercase text-xl text-white">
+                <img src={logo} alt="Ardexa Logo" className="w-8 h-8 object-contain" />
+                <p>Ardexa</p>
               </div>
-              <p className="text-sm leading-relaxed text-gray-700">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
-                labore dolore illo neque explicabo tenetur.
+              <p className="text-sm leading-relaxed text-gray-400">
+                Jl. Nata Endah Jl. Semboja No.P. 82, Margahayu Tengah, Kec. Margahayu, Kabupaten Bandung, Jawa Barat 40225
               </p>
-              <div className="flex gap-4 mt-4 text-gray-600">
-                <a href="#" className="hover:text-blue-600 transition-colors">
+              <div className="flex gap-4 mt-4 text-gray-400">
+                <a href="https://maps.app.goo.gl/69ce2xt1hiHSsHCd9" className="hover:text-blue-500 transition-colors">
                   <HiLocationMarker className="text-2xl" />
                 </a>
-                <a href="#" className="hover:text-blue-600 transition-colors">
+                <a href="https://www.instagram.com/ardexa.projects/" className="hover:text-blue-500 transition-colors">
                   <FaInstagram className="text-2xl" />
                 </a>
-                <a href="#" className="hover:text-blue-600 transition-colors">
+                <a href="https://www.tiktok.com/@arsadalu.kreasi" className="hover:text-blue-500 transition-colors">
                   <FaTiktok className="text-2xl" />
                 </a>
-                <a href="#" className="hover:text-blue-600 transition-colors">
+                <a href="https://www.linkedin.com/company/arsadalukreasi" className="hover:text-blue-500 transition-colors">
                   <FaLinkedin className="text-2xl" />
                 </a>
               </div>
             </div>
 
-            {/* Important Links */}
-            <div>
-              <h1 className="text-lg font-bold mb-4">Important Links</h1>
+            {/* Company */}
+            <div className="md:pl-16">
+              <h1 className="text-lg font-bold mb-4 text-white">Company</h1>
               <ul className="space-y-2">
-                <li><a href="#" className="hover:text-blue-600 transition-colors">Home</a></li>
-                <li><a href="#" className="hover:text-blue-600 transition-colors">About</a></li>
-                <li><a href="#" className="hover:text-blue-600 transition-colors">Services</a></li>
-                <li><a href="#" className="hover:text-blue-600 transition-colors">Login</a></li>
+                <li><ScrollOrRoute to="about">Company Profile</ScrollOrRoute></li>
+                <li>
+                  <RouterLink to="/careers" className="hover:text-blue-500 transition-colors">
+                    Careers
+                  </RouterLink>
+                </li>
+                <li><ScrollOrRoute to="contact">Contact Us</ScrollOrRoute></li>
+                <li><a href="https://wa.link/fj69z9" className="hover:text-blue-500 transition-colors">Customer Support</a></li>
               </ul>
             </div>
 
-            {/* Company Links */}
-            <div>
-              <h1 className="text-lg font-bold mb-4">Company Links</h1>
+            {/* Resources */}
+            <div className="md:pl-16">
+              <h1 className="text-lg font-bold mb-4 text-white">Resources</h1>
               <ul className="space-y-2">
-                <li><a href="#" className="hover:text-blue-600 transition-colors">Profile</a></li>
-                <li><a href="#" className="hover:text-blue-600 transition-colors">Careers</a></li>
-                <li><a href="#" className="hover:text-blue-600 transition-colors">Contact</a></li>
-                <li><a href="#" className="hover:text-blue-600 transition-colors">Support</a></li>
+                <li>
+                  <RouterLink to="/faq" className="hover:text-blue-500 transition-colors">FAQ</RouterLink>
+                </li>
+                <li>
+                  <RouterLink to="/privacy-policy" className="hover:text-blue-500 transition-colors">Privacy Policy</RouterLink>
+                </li>
               </ul>
             </div>
 
-            {/* Extra Links */}
-            <div>
-              <h1 className="text-lg font-bold mb-4">Extra Links</h1>
+            {/* Services */}
+            <div className="md:pl-16">
+              <h1 className="text-lg font-bold mb-4 text-white">Services</h1>
               <ul className="space-y-2">
-                <li><a href="#" className="hover:text-blue-600 transition-colors">FAQ</a></li>
-                <li><a href="#" className="hover:text-blue-600 transition-colors">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-blue-600 transition-colors">Terms & Conditions</a></li>
-                <li><a href="#" className="hover:text-blue-600 transition-colors">Blog</a></li>
+                <li><ScrollOrRoute to="services">Project Planning</ScrollOrRoute></li>
+                <li><ScrollOrRoute to="services">Construction</ScrollOrRoute></li>
+                <li><ScrollOrRoute to="services">Design & Interior</ScrollOrRoute></li>
+                <li><ScrollOrRoute to="services">Permit Consulting</ScrollOrRoute></li>
               </ul>
             </div>
           </div>
 
           {/* Copyright */}
-          <div className="text-center py-4 border-t border-gray-300/50">
-            <span className="text-sm text-gray-600 flex items-center justify-center gap-1">
-              <FaCopyright /> 2025 PT. Arsa Dalu Kreasi, All rights reserved.
+          <div className="text-center py-4 border-t border-gray-700/50">
+            <span className="text-sm text-gray-500">
+              © {new Date().getFullYear()} PT. Arsa Dalu Kreasi. All Rights Reserved.
             </span>
           </div>
         </div>
-      </div>
+      </footer>
 
-      {/* Tombol WhatsApp */}
+      {/* WhatsApp Button */}
       <a
         href="https://wa.link/fj69z9"
         target="_blank"
@@ -110,11 +154,11 @@ const Footer = () => {
       {/* Scroll to Top */}
       {showScroll && (
         <div
-          className="fixed bottom-24 right-6 z-50 bg-blue-600 hover:bg-blue-800 text-white p-3 rounded-full shadow-lg cursor-pointer transition-all duration-300"
+          className="fixed bottom-28 right-8 z-50 bg-blue-600 hover:bg-blue-800 text-white p-3 rounded-full shadow-lg cursor-pointer transition-all duration-300"
         >
-          <Link to="hero" spy={true} offset={-100} smooth={true}>
+          <ScrollLink to="hero" spy={true} offset={-100} smooth={true}>
             <FaArrowUp className="size-5" />
-          </Link>
+          </ScrollLink>
         </div>
       )}
     </>
