@@ -12,7 +12,7 @@ import Footer from "./sections/Footer";
 import About from "./sections/About";
 
 // Pages
-import Careers from "./pages/careers";
+import Careers from "./pages/Careers";
 import FAQ from "./pages/FAQ";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 
