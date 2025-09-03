@@ -53,6 +53,43 @@ const Careers = () => {
 
   return (
     <>
+      {/* SEO Helmet */}
+      <Helmet>
+        <title>Karir | PT Arsa Dalu Kreasi</title>
+        <meta
+          name="description"
+          content="Temukan peluang karir di PT Arsa Dalu Kreasi, konsultan perencanaan & perizinan di Bandung. Jadilah bagian dari tim profesional dan inovatif kami."
+        />
+        <meta
+          name="keywords"
+          content="lowongan kerja, karir Bandung, HRD, Drafter, Desainer Interior, PT Arsa Dalu Kreasi"
+        />
+        <meta name="author" content="PT Arsa Dalu Kreasi" />
+
+        {/* Canonical */}
+        <link rel="canonical" href="https://arsadalukreasi.com/careers" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Karir | PT Arsa Dalu Kreasi" />
+        <meta
+          property="og:description"
+          content="Bergabunglah bersama PT Arsa Dalu Kreasi. Temukan peluang kerja di bidang perencanaan, perizinan, dan desain interior di Bandung."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://arsadalukreasi.com/careers" />
+        <meta property="og:image" content="https://arsadalukreasi.com/og-careers.jpg" />
+        <meta property="og:site_name" content="Ardexa" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Karir | PT Arsa Dalu Kreasi" />
+        <meta
+          name="twitter:description"
+          content="Lowongan kerja di PT Arsa Dalu Kreasi. Bergabunglah bersama kami di Bandung untuk mendukung proyek konstruksi dan perizinan."
+        />
+        <meta name="twitter:image" content="https://arsadalukreasi.com/og-careers.jpg" />
+      </Helmet>
+
       <Header />
 
       <div className="min-h-screen bg-gray-50 py-20 px-6 md:px-20">

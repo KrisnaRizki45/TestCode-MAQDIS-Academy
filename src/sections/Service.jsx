@@ -3,12 +3,34 @@ import { motion as Motion, AnimatePresence } from "framer-motion";
 import { slideUpVariants, zoomInVariants } from "./animation";
 import { allservices } from "../export";
 import { FaTimes } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 
 const Service = () => {
   const [selectedService, setSelectedService] = useState(null);
 
   return (
     <div id="services" className="w-full bg-white">
+      {/* SEO untuk halaman Services */}
+      <Helmet>
+        <title>Layanan Terbaik Kami | PT Arsa Dalu Kreasi</title>
+        <meta
+          name="description"
+          content="Temukan penawaran khusus dan layanan terbaik dari PT Arsa Dalu Kreasi untuk kebutuhan bisnis Anda."
+        />
+        <meta
+          name="keywords"
+          content="layanan, jasa, PT Arsa Dalu Kreasi, penawaran khusus, solusi bisnis"
+        />
+        <meta property="og:title" content="Layanan Terbaik Kami | PT Arsa Dalu Kreasi" />
+        <meta
+          property="og:description"
+          content="Temukan penawaran khusus dan layanan terbaik dari PT Arsa Dalu Kreasi untuk kebutuhan bisnis Anda."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://arsadalukreasi.com" />
+        <meta property="og:image" content="https://arsadalukreasi.com/preview.png" />
+      </Helmet>
+
       <Motion.div
         initial="hidden"
         whileInView="visible"
