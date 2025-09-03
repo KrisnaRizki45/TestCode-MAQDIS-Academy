@@ -11,6 +11,7 @@ import {
 import { FaXmark } from "react-icons/fa6"; // import icon close
 import Header from "../sections/Header";
 import Footer from "../sections/Footer";
+import { Helmet } from "react-helmet-async";
 
 const careers = [
   {
