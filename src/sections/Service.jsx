@@ -38,7 +38,9 @@ const Service = () => {
         <Motion.div
           initial="hidden"
           whileInView="visible"
-          variants={slideUpVariants}
+          variants={{
+            visible: { transition: { staggerChildren: 0.2 } },
+          }}
           viewport={{ once: true, amount: 0.2 }}
           className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-8"
         >
@@ -49,10 +51,10 @@ const Service = () => {
                 key={index}
                 variants={zoomInVariants}
                 whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.98 }}
+                whileTap={{ scale: 0.97 }}
                 onClick={() => setSelectedService(item)}
                 className="bg-white border border-gray-200 shadow-md rounded-2xl 
-                          cursor-pointer hover:shadow-xl transition-all duration-300 
+                          cursor-pointer hover:shadow-2xl transition-all duration-300 
                           flex flex-col p-4 sm:p-6 w-full"
               >
                 {/* Icon */}
@@ -104,7 +106,9 @@ const Service = () => {
               {/* Icon & Title */}
               <div className="flex items-center gap-4 mb-4">
                 <selectedService.icon className="w-10 h-10 text-blue-600" />
-                <h2 className="text-xl sm:text-2xl font-bold">{selectedService.title}</h2>
+                <h2 className="text-xl sm:text-2xl font-bold">
+                  {selectedService.title}
+                </h2>
               </div>
 
               {/* Detail */}

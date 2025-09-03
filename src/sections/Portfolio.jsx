@@ -117,7 +117,7 @@ const Portfolio = () => {
                 <img
                   src={selectedProject.image[currentImageIndex]}
                   alt={selectedProject.title}
-                  className="w-full h-72 object-cover rounded-lg mb-4"
+                  className="w-full h-auto max-h-[60vh] md:max-h-[80vh] object-contain rounded-lg mb-4"
                 />
 
                 {/* Prev Button */}

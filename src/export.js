@@ -26,14 +26,86 @@ import client1 from "../src/assets/client1.png";
 import client2 from "../src/assets/client2.png";
 import client3 from "../src/assets/client3.png";
 
-import project1 from "../src/assets/project1.jpg";
-import project2 from "../src/assets/project2.jpg";
-import project3 from "../src/assets/project3.jpg";
-import project4 from "../src/assets/project4.jpg";
-import project5 from "../src/assets/project5.jpg";
-import project6 from "../src/assets/project6.jpg";
-import project7 from "../src/assets/project7.jpg";
-import project8 from "../src/assets/project8.jpg";
+import dgria1 from "../src/assets/dgria1.jpg"
+import dgria2 from "../src/assets/dgria2.jpg"
+import dgria3 from "../src/assets/dgria3.jpg"
+
+import kai1 from "../src/assets/kai1.jpg"
+import kai2 from "../src/assets/kai2.jpg"
+import kai3 from "../src/assets/kai3.jpg"
+import kai4 from "../src/assets/kai4.jpg"
+import kai5 from "../src/assets/kai5.jpg"
+import kai6 from "../src/assets/kai6.jpg"
+
+import reasuransi1 from "../src/assets/reasuransi1.jpg"
+import reasuransi2 from "../src/assets/reasuransi2.jpg"
+import reasuransi3 from "../src/assets/reasuransi3.jpg"
+import reasuransi4 from "../src/assets/reasuransi4.jpg"
+import reasuransi5 from "../src/assets/reasuransi5.jpg"
+
+import rswalagiri1 from "../src/assets/rswalagiri1.jpg"
+import rswalagiri2 from "../src/assets/rswalagiri2.jpg"
+import rswalagiri3 from "../src/assets/rswalagiri3.jpg"
+import rswalagiri4 from "../src/assets/rswalagiri4.jpg"
+import rswalagiri5 from "../src/assets/rswalagiri5.jpg"
+import rswalagiri6 from "../src/assets/rswalagiri6.jpg"
+import rswalagiri7 from "../src/assets/rswalagiri7.jpg"
+
+import harver1 from "../src/assets/harver1.jpg"
+import harver2 from "../src/assets/harver2.jpg"
+import harver3 from "../src/assets/harver3.jpg"
+
+import cafe1 from "../src/assets/cafe1.jpg"
+import cafe2 from "../src/assets/cafe2.jpg"
+import cafe3 from "../src/assets/cafe3.jpg"
+import cafe4 from "../src/assets/cafe4.jpg"
+import cafe5 from "../src/assets/cafe5.jpg"
+import cafe6 from "../src/assets/cafe6.jpg"
+import cafe7 from "../src/assets/cafe7.jpg"
+import cafe8 from "../src/assets/cafe8.jpg"
+import cafe9 from "../src/assets/cafe9.jpg"
+import cafe10 from "../src/assets/cafe10.jpg"
+
+import stasiun1 from "../src/assets/stasiun1.jpg"
+import stasiun2 from "../src/assets/stasiun2.jpg"
+import stasiun3 from "../src/assets/stasiun3.jpg"
+import stasiun4 from "../src/assets/stasiun4.jpg"
+import stasiun5 from "../src/assets/stasiun5.jpg"
+import stasiun6 from "../src/assets/stasiun6.jpg"
+import stasiun7 from "../src/assets/stasiun7.jpg"
+import stasiun8 from "../src/assets/stasiun8.jpg"
+
+import minimarket1 from "../src/assets/minimarket1.jpg"
+import minimarket2 from "../src/assets/minimarket2.jpg"
+import minimarket3 from "../src/assets/minimarket3.jpg"
+import minimarket4 from "../src/assets/minimarket4.jpg"
+import minimarket5 from "../src/assets/minimarket5.jpg"
+
+import intwalagiri1 from "../src/assets/intwalagiri1.jpg"
+import intwalagiri2 from "../src/assets/intwalagiri1.jpg"
+import intwalagiri3 from "../src/assets/intwalagiri1.jpg"
+import intwalagiri4 from "../src/assets/intwalagiri1.jpg"
+import intwalagiri5 from "../src/assets/intwalagiri1.jpg"
+import intwalagiri6 from "../src/assets/intwalagiri1.jpg"
+
+import rumahquran1 from "../src/assets/rumahquran1.jpg"
+import rumahquran2 from "../src/assets/rumahquran2.jpg"
+import rumahquran3 from "../src/assets/rumahquran3.jpg"
+import rumahquran4 from "../src/assets/rumahquran4.jpg"
+import rumahquran5 from "../src/assets/rumahquran5.jpg"
+
+import masjid1 from "../src/assets/masjid1.jpg"
+import masjid2 from "../src/assets/masjid2.jpg"
+import masjid3 from "../src/assets/masjid3.jpg"
+import masjid4 from "../src/assets/masjid4.jpg"
+import masjid5 from "../src/assets/masjid5.jpg"
+
+import intcafe1 from "../src/assets/intcafe1.jpg"
+import intcafe2 from "../src/assets/intcafe2.jpg"
+import intcafe3 from "../src/assets/intcafe3.jpg"
+import intcafe4 from "../src/assets/intcafe4.jpg"
+import intcafe5 from "../src/assets/intcafe5.jpg"
+import intcafe6 from "../src/assets/intcafe6.jpg"
 
 // ====================== SERVICES ======================
 export const allservices = [
@@ -201,59 +273,87 @@ export const clients = [
 
 export const portfolio = [
   {
-    image: [project1, project2],
-    title: "Gedung Perkantoran Modern",
-    about: "Proyek pembangunan gedung perkantoran dengan desain arsitektur minimalis modern.",
+    image: [dgria1, dgria2, dgria3],
+    title: "D'Gria Hotel",
+    about: "Hotel modern dengan desain arsitektur kontemporer",
     detail:
-      "Gedung perkantoran 12 lantai yang dilengkapi dengan sistem mekanikal & elektrikal canggih, ruang kerja fleksibel, dan area hijau. Fokus utama pada efisiensi energi serta kenyamanan penghuni.",
+      "D'Gria Hotel menampilkan arsitektur modern dengan garis bersih dan fasad kaca yang elegan. Hotel ini memiliki 4 lantai, kamar yang nyaman, area lobi yang luas, dan banyak fasilitas lainnya. Desain interior memadukan kenyamanan dan estetika, dengan pencahayaan alami yang optimal, serta fokus pada efisiensi energi dan pengalaman tamu yang menyenangkan."
   },
   {
-    image:[project3, project4],
-    title: "Jembatan Kota",
-    about: "Proyek infrastruktur sipil berupa pembangunan jembatan penghubung antar wilayah.",
+    image: [kai2, kai1, kai3, kai4, kai5, kai6],
+    title: "Stasiun KAI",
+    about: "Proyek pembangunan fasilitas kantor dan stasiun modern untuk PT KAI.",
     detail:
-      "Jembatan sepanjang 1,5 km dengan struktur baja berkekuatan tinggi, dirancang untuk menahan beban lalu lintas padat serta kondisi lingkungan ekstrem. Proyek ini meningkatkan konektivitas antar kota.",
+      "Proyek ini mencakup pembangunan kantor dan stasiun KAI dengan desain modern dan fungsional. Bangunan dirancang untuk menampung aktivitas operasional yang padat, memudahkan mobilitas pegawai dan penumpang, serta dilengkapi fasilitas publik yang nyaman. Struktur bangunan menggunakan material berkualitas tinggi untuk memastikan keamanan, efisiensi energi, dan daya tahan terhadap kondisi lingkungan."
   },
   {
-    image: [project5, project6],
-    title: "Rumah Hunian Premium",
-    about: "Desain rumah tinggal dengan interior modern dan ramah lingkungan.",
+    image: [reasuransi5, reasuransi2, reasuransi3, reasuransi4, reasuransi1],
+    title: "Kantor PT Reasuransi",
+    about: "Desain interior kantor modern dan fungsional.",
     detail:
-      "Hunian 2 lantai dengan konsep open space, material ramah lingkungan, serta pemanfaatan pencahayaan alami. Dilengkapi sistem smart home untuk kenyamanan penghuni.",
+      "Kantor PT Reasuransi dirancang dengan interior modern yang nyaman dan profesional. Ruang kerja terbuka dan fleksibel mendukung kolaborasi tim, dilengkapi pencahayaan alami optimal, area meeting, serta fasilitas pendukung lain untuk efisiensi operasional. Desain menekankan estetika minimalis sekaligus kenyamanan bagi karyawan dan pengunjung."
   },
   {
-    image: [project7, project8],
-    title: "Kawasan Industri",
-    about: "Pengembangan kawasan industri dengan fasilitas lengkap.",
+    image: [rswalagiri5, rswalagiri2, rswalagiri3, rswalagiri4, rswalagiri1, rswalagiri6, rswalagiri7],
+    title: "RS Walagiri",
+    about: "Rumah sakit modern dengan fasilitas lengkap dan bangunan 7 lantai.",
     detail:
-      "Masterplan kawasan industri seluas 50 hektar yang dilengkapi dengan infrastruktur jalan, sistem drainase, jaringan listrik, serta area hijau untuk menjaga keseimbangan lingkungan.",
+      "RS Walagiri terdiri dari 7 lantai dengan desain modern yang efisien dan fungsional. Dilengkapi area parkir luas, ruang perawatan, ruang operasi, dan fasilitas medis lainnya untuk mendukung pelayanan kesehatan yang optimal. Infrastruktur dirancang untuk kenyamanan pasien, staf, dan pengunjung, serta memperhatikan efisiensi energi dan keamanan bangunan."
   },
-  // {
-  //   image: [project1, project2, project3],
-  //   title: "Mall & Pusat Perbelanjaan",
-  //   about: "Proyek pembangunan pusat perbelanjaan modern.",
-  //   detail:
-  //     "Mall 5 lantai dengan area retail, foodcourt, bioskop, dan ruang hiburan keluarga. Desain interior mengutamakan kenyamanan pengunjung dan pengalaman belanja yang menyenangkan.",
-  // },
-  // {
-  //   image: [project1, project2, project3],
-  //   title: "Hotel & Resort",
-  //   about: "Pembangunan hotel bintang 5 dengan konsep resort mewah.",
-  //   detail:
-  //     "Resort mewah dengan 200 kamar, villa eksklusif, restoran, spa, serta fasilitas rekreasi. Konsep desain menggabungkan modern architecture dengan sentuhan lokal.",
-  // },
-  // {
-  //   image: [project1, project2, project3],
-  //   title: "Sekolah & Fasilitas Pendidikan",
-  //   about: "Desain dan pembangunan gedung sekolah modern.",
-  //   detail:
-  //     "Sekolah menengah dengan ruang kelas nyaman, laboratorium sains, perpustakaan digital, serta area olahraga. Konsep ramah anak dan lingkungan hijau.",
-  // },
-  // {
-  //   image: [project1, project2, project3],
-  //   title: "Pusat Kesehatan",
-  //   about: "Proyek pembangunan rumah sakit dengan fasilitas lengkap.",
-  //   detail:
-  //     "Rumah sakit dengan kapasitas 300 tempat tidur, ruang operasi modern, unit gawat darurat, serta sistem manajemen digital. Dirancang untuk pelayanan kesehatan yang cepat dan efektif.",
-  // },
+  {
+    image: [harver2, harver1, harver3],
+    title: "Hotel Harver",
+    about: "Desain hotel modern dengan fasilitas lengkap untuk kenyamanan tamu.",
+    detail:
+      "Hotel Harver dirancang dengan tampilan bangunan modern yang elegan, mengedepankan kenyamanan serta pengalaman tamu yang berkesan. Bangunan terdiri dari beberapa lantai dengan penataan ruang kamar yang efisien, lobby yang luas, serta area publik seperti restoran, ruang meeting, dan lounge. Fasilitas pendukung seperti area parkir yang memadai, sistem keamanan, serta desain interior yang hangat dan profesional semakin menambah nilai eksklusif hotel ini."
+  },
+  {
+    image: [cafe6, cafe2, cafe3, cafe4, cafe5, cafe1, cafe7, cafe8, cafe9, cafe10 ],
+    title: "Cafe",
+    about: "Konsep cafe modern dengan sentuhan minimalis dan area pendukung yang nyaman.",
+    detail:
+      "Cafe ini dirancang dengan tampilan bangunan modern minimalis yang memadukan elemen kayu, kaca, dan pencahayaan alami untuk menciptakan suasana hangat. Interior ditata dengan ruang duduk indoor dan outdoor, serta tata letak meja kursi yang mendukung kenyamanan pelanggan. Area parkir disediakan cukup luas untuk kendaraan roda dua maupun roda empat. Selain itu, detail interior meliputi penataan barista bar, dekorasi dinding, hingga pencahayaan artistik yang menambah nilai estetika dan menghadirkan pengalaman bersantai yang menyenangkan."
+  },
+  {
+  image: [stasiun1, stasiun2, stasiun3, stasiun4, stasiun5, stasiun6, stasiun7, stasiun8 ],
+  title: "Stasiun",
+  about: "Konsep stasiun modern dengan fasilitas publik yang nyaman dan fungsional.",
+  detail:
+    "Stasiun ini dirancang dengan arsitektur modern yang mengedepankan kenyamanan pengguna transportasi. Ruang tunggu dibuat luas dengan pencahayaan alami yang maksimal, dilengkapi area tiket, loket informasi, serta fasilitas akses difabel. Material kaca dan baja digunakan untuk memperkuat kesan futuristik, sementara area sirkulasi penumpang ditata rapi agar mobilitas lebih lancar dan aman."
+  },
+  {
+    image: [minimarket1, minimarket2, minimarket3, minimarket4, minimarket5 ],
+    title: "Amandamart",
+    about: "Konsep minimarket dengan tata letak efisien dan interior yang ramah pelanggan.",
+    detail:
+      "Minimarket ini dirancang dengan fokus pada tata ruang yang memudahkan pelanggan dalam menemukan produk. Interior menggunakan rak modular, pencahayaan terang, serta jalur sirkulasi yang lebar untuk kenyamanan berbelanja. Area kasir ditempatkan strategis dekat pintu keluar, sementara desain fasad menampilkan nuansa modern dengan kombinasi kaca dan panel kayu."
+  },
+  {
+    image: [intwalagiri1, intwalagiri2, intwalagiri3, intwalagiri4, intwalagiri5, intwalagiri6 ],
+    title: "Interior RS Walagiri",
+    about: "Konsep interior bangunan dengan sentuhan modern dan fungsional.",
+    detail:
+      "Interior Walagiri dirancang dengan suasana hangat dan modern. Penataan ruang difokuskan pada kenyamanan dengan furnitur minimalis, dekorasi dinding artistik, serta pencahayaan yang menonjolkan elemen kayu. Area ruang utama dikombinasikan dengan sentuhan modern agar tetap fungsional namun menghadirkan kesan elegan dan profesional."
+  },
+  {
+    image: [rumahquran1, rumahquran2, rumahquran3, rumahquran4, rumahquran5 ],
+    title: "Rumah Qur’an",
+    about: "Bangunan rumah Qur’an Sahabat Tuli dengan suasana religius dan nuansa islami yang kuat.",
+    detail:
+      "Rumah Qur’an ini dirancang untuk menunjang kegiatan belajar dan menghafal Al-Qur’an. Interiornya sederhana namun menenangkan, dengan pencahayaan alami dan sirkulasi udara yang baik. Ruang utama dilengkapi area belajar berjamaah, ruang pengajar, serta fasilitas pendukung lain. Eksterior menampilkan ornamen islami dengan dominasi warna netral agar tetap khidmat dan nyaman."
+  },
+  {
+    image: [masjid1, masjid2, masjid3, masjid4, masjid5 ],
+    title: "Masjid",
+    about: "Konsep masjid modern dengan nuansa islami dan kenyamanan jamaah.",
+    detail:
+      "Masjid ini menggabungkan arsitektur tradisional islami dengan elemen modern. Kubah dan menara didesain ikonik, sementara area dalam menonjolkan ruang shalat yang luas dengan pencahayaan alami. Area wudhu dan toilet ditempatkan strategis, serta tersedia area parkir yang memadai. Interior masjid dibuat sederhana namun penuh makna dengan kaligrafi dan ornamen islami."
+  },
+  {
+    image: [intcafe1, intcafe2, intcafe3, intcafe4, intcafe5, intcafe6],
+    title: "Interior Cafe",
+    about: "Konsep interior cafe modern minimalis dengan suasana hangat.",
+    detail:
+      "Interior cafe ini dirancang untuk memberikan kenyamanan maksimal kepada pelanggan. Penataan kursi dan meja dibuat fleksibel untuk kebutuhan individu maupun kelompok. Material kayu dipadukan dengan pencahayaan hangat untuk menghadirkan nuansa homey. Area barista bar dibuat sebagai focal point, dengan dekorasi artistik yang memperkuat identitas cafe."
+  },
 ];

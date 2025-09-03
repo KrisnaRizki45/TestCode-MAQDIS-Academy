@@ -15,8 +15,9 @@ const PrivacyPolicy = () => {
             Privacy Policy
           </h1>
           <p className="text-gray-600 mb-8 text-center">
-            Kami menghargai privasi pengguna. Kebijakan privasi ini menjelaskan
-            bagaimana kami mengumpulkan, menggunakan, dan melindungi data pribadi Anda.
+            <span className="font-semibold">Ardexa</span> berkomitmen untuk melindungi privasi setiap klien dan mitra kerja. 
+            Kebijakan privasi ini menjelaskan bagaimana data pribadi dan informasi proyek 
+            dikelola dengan aman, profesional, dan sesuai peraturan yang berlaku.
           </p>
 
           <div className="space-y-6">
@@ -28,8 +29,9 @@ const PrivacyPolicy = () => {
                 Informasi yang Kami Kumpulkan
               </h2>
               <p className="text-gray-600 mt-2 ml-11">
-                Kami dapat mengumpulkan informasi pribadi seperti nama, email,
-                nomor telepon, serta data penggunaan aplikasi.
+                Kami dapat mengumpulkan informasi seperti nama, email, nomor telepon, 
+                alamat, serta data proyek yang relevan dengan kebutuhan layanan konsultasi, 
+                konstruksi, desain, maupun perizinan.
               </p>
             </div>
 
@@ -41,8 +43,9 @@ const PrivacyPolicy = () => {
                 Bagaimana Kami Menggunakan Informasi
               </h2>
               <p className="text-gray-600 mt-2 ml-11">
-                Data yang dikumpulkan digunakan untuk meningkatkan layanan,
-                menghubungi pengguna, serta menyediakan fitur aplikasi yang lebih baik.
+                Informasi digunakan untuk memberikan layanan terbaik, memastikan kelancaran 
+                proses konsultasi dan proyek, menghubungi klien terkait kebutuhan proyek, serta 
+                mendukung pengurusan perizinan yang sesuai regulasi.
               </p>
             </div>
 
@@ -54,8 +57,9 @@ const PrivacyPolicy = () => {
                 Keamanan Data
               </h2>
               <p className="text-gray-600 mt-2 ml-11">
-                Kami berkomitmen untuk melindungi informasi pribadi Anda dengan
-                teknologi keamanan yang memadai.
+                Data klien dan mitra dijaga kerahasiaannya dengan sistem pengamanan internal. 
+                Kami memastikan informasi proyek maupun data pribadi tidak disalahgunakan 
+                dan hanya digunakan sesuai tujuan layanan.
               </p>
             </div>
 
@@ -67,8 +71,8 @@ const PrivacyPolicy = () => {
                 Perubahan Kebijakan
               </h2>
               <p className="text-gray-600 mt-2 ml-11">
-                Kami dapat memperbarui kebijakan privasi ini sewaktu-waktu.
-                Perubahan akan diumumkan melalui aplikasi atau website kami.
+                Kebijakan privasi ini dapat diperbarui sesuai perkembangan layanan dan regulasi. 
+                Setiap perubahan akan diinformasikan melalui website atau komunikasi resmi kami.
               </p>
             </div>
           </div>

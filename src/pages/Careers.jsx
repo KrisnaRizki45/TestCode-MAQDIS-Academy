@@ -15,19 +15,19 @@ import Footer from "../sections/Footer";
 const careers = [
   {
     id: 1,
-    title: "Project Manager",
+    title: "HRD / Human Resources",
     location: "Bandung, Jawa Barat",
     type: "Full-time",
-    deadline: "30 September 2025",
+    deadline: "Secepatnya",
     description:
-      "Bertanggung jawab dalam perencanaan, pelaksanaan, dan pengawasan proyek konstruksi hingga selesai sesuai target.",
-    brochure: "/brosur_project_manager.pdf", // file brosur khusus PM
+      "Bertanggung jawab untuk manajemen SDM, rekrutmen, administrasi karyawan, serta pengembangan dan kesejahteraan staf perusahaan.",
+    brochure: "/brosur_hrd.pdf", // file brosur khusus HRD
     details: [
-      "Pendidikan minimal S1 Teknik Sipil/Arsitektur",
-      "Pengalaman 3+ tahun dalam manajemen proyek konstruksi",
-      "Memiliki kemampuan leadership dan komunikasi yang baik",
-      "Mampu membaca gambar teknik dan dokumen kontrak",
-      "Bersedia ditempatkan di lokasi proyek sesuai kebutuhan",
+      "Pendidikan minimal S1 Manajemen SDM, Psikologi, atau bidang terkait",
+      "Pengalaman 2+ tahun di bidang HRD, rekrutmen, dan administrasi karyawan",
+      "Menguasai sistem administrasi karyawan dan payroll",
+      "Mampu berkomunikasi dan bernegosiasi dengan baik",
+      "Teliti, disiplin, dan mampu menjaga kerahasiaan data karyawan",
     ],
   },
   {
@@ -35,31 +35,15 @@ const careers = [
     title: "Drafter / Desainer Interior",
     location: "Bandung, Jawa Barat",
     type: "Full-time",
-    deadline: "15 Oktober 2025",
+    deadline: "Secepatnya",
     description:
       "Membuat gambar kerja, desain interior, dan rendering 3D untuk mendukung kebutuhan proyek.",
-    brochure: "/brosur_drafter.pdf", // file brosur khusus Drafter
+    brochure: "/assets/drafter.pdf", // file brosur khusus Drafter
     details: [
       "Pendidikan minimal D3/S1 Desain Interior/Arsitektur",
       "Menguasai AutoCAD, SketchUp, dan software rendering (Lumion/3dsMax)",
       "Kreatif, detail-oriented, dan mampu bekerja sesuai deadline",
       "Memiliki portofolio desain menjadi nilai tambah",
-    ],
-  },
-  {
-    id: 3,
-    title: "Staf Administrasi Proyek",
-    location: "Bandung, Jawa Barat",
-    type: "Full-time",
-    deadline: "10 Oktober 2025",
-    description:
-      "Mengelola dokumen, laporan, serta mendukung kebutuhan administrasi proyek.",
-    brochure: "/brosur_admin.pdf", // file brosur khusus admin
-    details: [
-      "Pendidikan minimal D3 Administrasi / Akuntansi",
-      "Menguasai Microsoft Office (Word, Excel, PowerPoint)",
-      "Teliti, komunikatif, dan mampu bekerja dalam tim",
-      "Pengalaman di bidang administrasi proyek menjadi nilai tambah",
     ],
   },
 ];
@@ -73,7 +57,7 @@ const Careers = () => {
 
       <div className="min-h-screen bg-gray-50 py-20 px-6 md:px-20">
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-10">
-          Careers at PT Arsa Dalu Kreasi
+          Karir di PT Arsa Dalu Kreasi
         </h1>
         <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
           Temukan peluang karir bersama kami dan jadilah bagian dari tim yang
@@ -110,9 +94,14 @@ const Careers = () => {
               </div>
 
               <div className="mt-6 flex flex-col gap-3">
-                <button className="w-full flex items-center justify-center gap-2 bg-blue-600 text-white py-2 px-4 rounded-xl hover:bg-blue-700 transition">
+                <a
+                  href="https://wa.me/6281537436666?text=Halo,%20saya%20ingin%20melamar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full flex items-center justify-center gap-2 bg-blue-600 text-white py-2 px-4 rounded-xl hover:bg-blue-700 transition"
+                >
                   <Send className="w-4 h-4" /> Lamar Sekarang
-                </button>
+                </a>
 
                 <a
                 href={job.brochure}
@@ -185,9 +174,14 @@ const Careers = () => {
             )}
 
             <div className="flex gap-3">
-              <button className="flex-1 flex items-center justify-center gap-2 bg-blue-600 text-white py-2 px-4 rounded-xl hover:bg-blue-700 transition">
-                <Send className="w-4 h-4" /> Lamar Sekarang
-              </button>
+              <a
+                  href="https://wa.me/6281537436666?text=Halo,%20saya%20ingin%20melamar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 flex items-center justify-center gap-2 bg-blue-600 text-white py-2 px-4 rounded-xl hover:bg-blue-700 transition"
+                >
+                  <Send className="w-4 h-4" /> Lamar Sekarang
+                </a>
               <a
                 href={selectedJob.brochure}
                 download

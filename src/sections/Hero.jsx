@@ -50,28 +50,33 @@ const Hero = () => {
           serta keberhasilan berbagai proyek pembangunan maupun kegiatan usaha.
         </p>
         <Motion.div
-          initial="hidden"
-          whileInView="visible"
-          variants={zoomInVariants}
-          className="flex justify-center items-center gap-5"
-        >
-          <Motion.button
-            variants={zoomInVariants}
-            onClick={() => setOpenModal("read")}
-            className="bg-blue-600 hover:bg-blue-900 hover:text-black px-10 py-3 rounded-lg
-                            text-black font-bold"
-          >
-            BACA SELENGKAPNYA
-          </Motion.button>
-          <Motion.button
-            variants={zoomInVariants}
-            onClick={() => setOpenModal("reach")}
-            className="border-white hover:border-blue-600 hover:text-blue-600
-                            border-2 px-10 py-3 rounded-lg text-white font-bold"
-          >
-            HUBUNGI KAMI
-          </Motion.button>
-        </Motion.div>
+  initial="hidden"
+  whileInView="visible"
+  variants={zoomInVariants}
+  className="flex flex-col sm:flex-row justify-center items-center gap-4 w-full sm:w-auto"
+>
+  <Motion.a
+  variants={zoomInVariants}
+  onClick={() => setOpenModal("read")}
+  className="block bg-blue-600 hover:bg-blue-900 hover:text-black 
+             w-full sm:w-auto text-center
+             px-6 sm:px-10 py-2 sm:py-3 rounded-lg
+             text-white text-sm sm:text-base font-bold"
+>
+  BACA SELENGKAPNYA
+</Motion.a>
+
+<Motion.a
+  variants={zoomInVariants}
+  onClick={() => setOpenModal("reach")}
+  className="block border-white hover:border-blue-600 hover:text-blue-600
+             border-2 w-full sm:w-auto text-center
+             px-6 sm:px-10 py-2 sm:py-3 rounded-lg
+             text-white text-sm sm:text-base font-bold"
+>
+  HUBUNGI KAMI
+</Motion.a>
+</Motion.div>
       </Motion.div>
 
       {/* RIGHT SIDE */}

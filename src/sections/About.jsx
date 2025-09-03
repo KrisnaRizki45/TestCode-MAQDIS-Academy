@@ -57,7 +57,7 @@ const About = () => {
             <Motion.button
                 variants={zoomInVariants}
                 onClick={() => setOpenModal("read")}
-                className='bg-blue-600 hover:bg-blue-900 hover:text-black px-10 py-3
+                className='bg-blue-600 hover:bg-blue-900 text-white hover:text-black px-10 py-3
                 rounded-lg font-bold text-black '
             >
                 BACA SELENGKAPNYA
