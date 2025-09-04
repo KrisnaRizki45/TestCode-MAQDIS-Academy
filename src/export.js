@@ -356,8 +356,8 @@ export const portfolio = [
   },
   {
     image: [
-      "/assets/stasiun1.jpg",
       "/assets/stasiun2.jpg",
+      "/assets/stasiun1.jpg",
       "/assets/stasiun3.jpg",
       "/assets/stasiun4.jpg",
       "/assets/stasiun5.jpg",
@@ -372,10 +372,10 @@ export const portfolio = [
   },
   {
     image: [
+      "/assets/minimarket4.jpg",
       "/assets/minimarket1.jpg",
       "/assets/minimarket2.jpg",
       "/assets/minimarket3.jpg",
-      "/assets/minimarket4.jpg",
       "/assets/minimarket5.jpg"
     ],
     title: "Amandamart",
@@ -383,58 +383,58 @@ export const portfolio = [
     detail:
       "Minimarket ini dirancang dengan fokus pada tata ruang yang memudahkan pelanggan dalam menemukan produk. Interior menggunakan rak modular, pencahayaan terang, serta jalur sirkulasi yang lebar untuk kenyamanan berbelanja. Area kasir ditempatkan strategis dekat pintu keluar, sementara desain fasad menampilkan nuansa modern dengan kombinasi kaca dan panel kayu."
   },
-  // {
-  //   image: [
-  //     "/assets/intwalagiri1.jpg",
-  //     "/assets/intwalagiri2.jpg",
-  //     "/assets/intwalagiri3.jpg",
-  //     "/assets/intwalagiri4.jpg",
-  //     "/assets/intwalagiri5.jpg",
-  //     "/assets/intwalagiri6.jpg"
-  //   ],
-  //   title: "Interior RS Walagiri",
-  //   about: "Konsep interior bangunan dengan sentuhan modern dan fungsional.",
-  //   detail:
-  //     "Interior Walagiri dirancang dengan suasana hangat dan modern. Penataan ruang difokuskan pada kenyamanan dengan furnitur minimalis, dekorasi dinding artistik, serta pencahayaan yang menonjolkan elemen kayu. Area ruang utama dikombinasikan dengan sentuhan modern agar tetap fungsional namun menghadirkan kesan elegan dan profesional."
-  // },
-  // {
-  //   image: [
-  //     "/assets/rumahquran1.jpg",
-  //     "/assets/rumahquran2.jpg",
-  //     "/assets/rumahquran3.jpg",
-  //     "/assets/rumahquran4.jpg",
-  //     "/assets/rumahquran5.jpg"
-  //   ],
-  //   title: "Rumah Qur’an",
-  //   about: "Bangunan rumah Qur’an Sahabat Tuli dengan suasana religius dan nuansa islami yang kuat.",
-  //   detail:
-  //     "Rumah Qur’an ini dirancang untuk menunjang kegiatan belajar dan menghafal Al-Qur’an. Interiornya sederhana namun menenangkan, dengan pencahayaan alami dan sirkulasi udara yang baik. Ruang utama dilengkapi area belajar berjamaah, ruang pengajar, serta fasilitas pendukung lain. Eksterior menampilkan ornamen islami dengan dominasi warna netral agar tetap khidmat dan nyaman."
-  // },
-  // {
-  //   image: [
-  //     "/assets/masjid1.jpg",
-  //     "/assets/masjid2.jpg",
-  //     "/assets/masjid3.jpg",
-  //     "/assets/masjid4.jpg",
-  //     "/assets/masjid5.jpg"
-  //   ],
-  //   title: "Masjid",
-  //   about: "Konsep masjid modern dengan nuansa islami dan kenyamanan jamaah.",
-  //   detail:
-  //     "Masjid ini menggabungkan arsitektur tradisional islami dengan elemen modern. Kubah dan menara didesain ikonik, sementara area dalam menonjolkan ruang shalat yang luas dengan pencahayaan alami. Area wudhu dan toilet ditempatkan strategis, serta tersedia area parkir yang memadai. Interior masjid dibuat sederhana namun penuh makna dengan kaligrafi dan ornamen islami."
-  // },
-  // {
-  //   image: [
-  //     "/assets/intcafe1.jpg",
-  //     "/assets/intcafe2.jpg",
-  //     "/assets/intcafe3.jpg",
-  //     "/assets/intcafe4.jpg",
-  //     "/assets/intcafe5.jpg",
-  //     "/assets/intcafe6.jpg"
-  //   ],
-  //   title: "Interior Cafe",
-  //   about: "Konsep interior cafe modern minimalis dengan suasana hangat.",
-  //   detail:
-  //     "Interior cafe ini dirancang untuk memberikan kenyamanan maksimal kepada pelanggan. Penataan kursi dan meja dibuat fleksibel untuk kebutuhan individu maupun kelompok. Material kayu dipadukan dengan pencahayaan hangat untuk menghadirkan nuansa homey. Area barista bar dibuat sebagai focal point, dengan dekorasi artistik yang memperkuat identitas cafe."
-  // }
+  {
+    image: [
+      "/assets/intwalagiri1.jpg",
+      "/assets/intwalagiri2.jpg",
+      "/assets/intwalagiri3.jpg",
+      "/assets/intwalagiri4.jpg",
+      "/assets/intwalagiri5.jpg",
+      "/assets/intwalagiri6.jpg"
+    ],
+    title: "Interior RS Walagiri",
+    about: "Konsep interior bangunan dengan sentuhan modern dan fungsional.",
+    detail:
+      "Interior Walagiri dirancang dengan suasana hangat dan modern. Penataan ruang difokuskan pada kenyamanan dengan furnitur minimalis, dekorasi dinding artistik, serta pencahayaan yang menonjolkan elemen kayu. Area ruang utama dikombinasikan dengan sentuhan modern agar tetap fungsional namun menghadirkan kesan elegan dan profesional."
+  },
+  {
+    image: [
+      "/assets/rumahquran4.jpg",
+      "/assets/rumahquran1.jpg",
+      "/assets/rumahquran2.jpg",
+      "/assets/rumahquran3.jpg",
+      "/assets/rumahquran5.jpg"
+    ],
+    title: "Rumah Qur’an",
+    about: "Bangunan rumah Qur’an Sahabat Tuli dengan suasana religius dan nuansa islami yang kuat.",
+    detail:
+      "Rumah Qur’an ini dirancang untuk menunjang kegiatan belajar dan menghafal Al-Qur’an. Interiornya sederhana namun menenangkan, dengan pencahayaan alami dan sirkulasi udara yang baik. Ruang utama dilengkapi area belajar berjamaah, ruang pengajar, serta fasilitas pendukung lain. Eksterior menampilkan ornamen islami dengan dominasi warna netral agar tetap khidmat dan nyaman."
+  },
+  {
+    image: [
+      "/assets/masjid3.jpg",
+      "/assets/masjid1.jpg",
+      "/assets/masjid2.jpg",
+      "/assets/masjid4.jpg",
+      "/assets/masjid5.jpg"
+    ],
+    title: "Masjid",
+    about: "Konsep masjid modern dengan nuansa islami dan kenyamanan jamaah.",
+    detail:
+      "Masjid ini menggabungkan arsitektur tradisional islami dengan elemen modern. Kubah dan menara didesain ikonik, sementara area dalam menonjolkan ruang shalat yang luas dengan pencahayaan alami. Area wudhu dan toilet ditempatkan strategis, serta tersedia area parkir yang memadai. Interior masjid dibuat sederhana namun penuh makna dengan kaligrafi dan ornamen islami."
+  },
+  {
+    image: [
+      "/assets/intcafe1.jpg",
+      "/assets/intcafe2.jpg",
+      "/assets/intcafe3.jpg",
+      "/assets/intcafe4.jpg",
+      "/assets/intcafe5.jpg",
+      "/assets/intcafe6.jpg"
+    ],
+    title: "Interior Cafe",
+    about: "Konsep interior cafe modern minimalis dengan suasana hangat.",
+    detail:
+      "Interior cafe ini dirancang untuk memberikan kenyamanan maksimal kepada pelanggan. Penataan kursi dan meja dibuat fleksibel untuk kebutuhan individu maupun kelompok. Material kayu dipadukan dengan pencahayaan hangat untuk menghadirkan nuansa homey. Area barista bar dibuat sebagai focal point, dengan dekorasi artistik yang memperkuat identitas cafe."
+  }
 ];

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import heroimg from "../assets/heroimg.png";
+import heroimg from "../assets/buildinghero.png";
 import backgroundImage from "../assets/homeimg.webp";
 import { motion as Motion, AnimatePresence } from "framer-motion";
 import { slideUpVariants, zoomInVariants } from "./animation";

@@ -1,20 +1,29 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { ThreeDot } from "react-loading-indicators";
 
-import Header from "./sections/Header";
-import Hero from "./sections/Hero";
-import Service from "./sections/Service";
-import Portfolio from "./sections/Portfolio";
-import Trusted from "./sections/Trusted";
-import Testimonials from "./sections/Testimonials";
-import Contact from "./sections/Contact";
-import Footer from "./sections/Footer";
-import About from "./sections/About";
+// Lazy import sections
+const Header = lazy(() => import("./sections/Header"));
+const Hero = lazy(() => import("./sections/Hero"));
+const About = lazy(() => import("./sections/About"));
+const Service = lazy(() => import("./sections/Service"));
+const Portfolio = lazy(() => import("./sections/Portfolio"));
+const Trusted = lazy(() => import("./sections/Trusted"));
+const Testimonials = lazy(() => import("./sections/Testimonials"));
+const Contact = lazy(() => import("./sections/Contact"));
+const Footer = lazy(() => import("./sections/Footer"));
 
-// Pages
-import Careers from "./pages/Careers";
-import FAQ from "./pages/FAQ";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
+// Lazy import pages
+const Careers = lazy(() => import("./pages/Careers"));
+const FAQ = lazy(() => import("./pages/FAQ"));
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+
+// Loader component
+const Loader = () => (
+  <div className="flex justify-center items-center h-screen">
+    <ThreeDot variant="bounce" color="#2563EB" size="medium"/>
+  </div>
+);
 
 function Home() {
   return (
@@ -35,15 +44,17 @@ function Home() {
 function App() {
   return (
     <Router>
-      <Routes>
-        {/* Halaman utama */}
-        <Route path="/" element={<Home />} />  
+      <Suspense fallback={<Loader />}>
+        <Routes>
+          {/* Halaman utama */}
+          <Route path="/" element={<Home />} />
 
-        {/* Routing Pages */}
-        <Route path="/careers" element={<Careers />} />  
-        <Route path="/faq" element={<FAQ />} />  
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />  
-      </Routes>
+          {/* Routing Pages */}
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        </Routes>
+      </Suspense>
     </Router>
   );
 }
