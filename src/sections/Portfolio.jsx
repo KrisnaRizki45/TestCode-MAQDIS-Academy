@@ -29,7 +29,7 @@ const Portfolio = () => {
         initial="hidden"
         whileInView="visible"
         variants={slideUpVariants}
-        viewport={{ once: false, amount: 0.2 }}
+        viewport={{ once: false, amount: 0.1 }}
         className="lg:w-[80%] w-[90%] m-auto py-[60px] flex flex-col items-center gap-[20px]"
       >
         <Motion.h1 variants={slideUpVariants} className="text-blue-600 text-2xl">
@@ -48,16 +48,13 @@ const Portfolio = () => {
 
         {/* Portfolio Grid */}
         <Motion.div
-          initial="hidden"
-          whileInView="visible"
-          variants={{
-            visible: {
-              transition: { staggerChildren: 0.2 },
-            },
-          }}
-          viewport={{ once: true, amount: 0.2 }}
-          className="w-full grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 mt-10"
-        >
+  variants={{
+    visible: {
+      transition: { staggerChildren: 0.2 },
+    },
+  }}
+  className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+>
           {portfolio.map((item, index) => (
             <Motion.div
               key={index}

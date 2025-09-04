@@ -35,7 +35,7 @@ const Service = () => {
         initial="hidden"
         whileInView="visible"
         variants={slideUpVariants}
-        viewport={{ once: false, amount: 0.2 }}
+        viewport={{ once: false, amount: 0.1 }}
         className="lg:w-[80%] w-[95%] m-auto py-[50px] flex flex-col items-center gap-6"
       >
         {/* Section Heading */}
@@ -63,7 +63,7 @@ const Service = () => {
           variants={{
             visible: { transition: { staggerChildren: 0.2 } },
           }}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.1 }}
           className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-8"
         >
           {allservices.map((item, index) => {
