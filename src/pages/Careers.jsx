@@ -8,7 +8,7 @@ import {
   Info,
   CheckCircle,
 } from "lucide-react";
-import { FaXmark } from "react-icons/fa6"; // import icon close
+import { FaXmark } from "react-icons/fa6";
 import Header from "../sections/Header";
 import Footer from "../sections/Footer";
 import { Helmet } from "react-helmet-async";
@@ -16,35 +16,34 @@ import { Helmet } from "react-helmet-async";
 const careers = [
   {
     id: 1,
-    title: "HRD / Human Resources",
+    title: "Guru Tahfidz / Pengajar Qur’an",
     location: "Bandung, Jawa Barat",
     type: "Full-time",
     deadline: "Secepatnya",
     description:
-      "Bertanggung jawab untuk manajemen SDM, rekrutmen, administrasi karyawan, serta pengembangan dan kesejahteraan staf perusahaan.",
-    brochure: "/brosur_hrd.pdf", // file brosur khusus HRD
+      "Bertanggung jawab membimbing siswa dalam membaca, menghafal, dan memahami Al-Qur’an sesuai metode MAQDIS Academy.",
+    brochure: "/brosur_guru.pdf",
     details: [
-      "Pendidikan minimal S1 Manajemen SDM, Psikologi, atau bidang terkait",
-      "Pengalaman 2+ tahun di bidang HRD, rekrutmen, dan administrasi karyawan",
-      "Menguasai sistem administrasi karyawan dan payroll",
-      "Mampu berkomunikasi dan bernegosiasi dengan baik",
-      "Teliti, disiplin, dan mampu menjaga kerahasiaan data karyawan",
+      "Pendidikan minimal SMA/SMK, diutamakan lulusan pesantren",
+      "Menguasai tajwid dan metode tahfidz",
+      "Sabar, telaten, dan mampu memotivasi siswa",
+      "Memiliki pengalaman mengajar menjadi nilai tambah",
     ],
   },
   {
     id: 2,
-    title: "Drafter / Desainer Interior",
+    title: "Staff Administrasi Yayasan",
     location: "Bandung, Jawa Barat",
     type: "Full-time",
     deadline: "Secepatnya",
     description:
-      "Membuat gambar kerja, desain interior, dan rendering 3D untuk mendukung kebutuhan proyek.",
-    brochure: "/assets/drafter.pdf", // file brosur khusus Drafter
+      "Menangani administrasi harian, pendaftaran siswa, dan dokumentasi kegiatan yayasan.",
+    brochure: "/brosur_admin.pdf",
     details: [
-      "Pendidikan minimal D3/S1 Desain Interior/Arsitektur",
-      "Menguasai AutoCAD, SketchUp, dan software rendering (Lumion/3dsMax)",
-      "Kreatif, detail-oriented, dan mampu bekerja sesuai deadline",
-      "Memiliki portofolio desain menjadi nilai tambah",
+      "Pendidikan minimal SMA/SMK",
+      "Teliti dan rapi dalam administrasi",
+      "Menguasai Ms. Office / Google Workspace",
+      "Mampu bekerja dalam tim dan sesuai deadline",
     ],
   },
 ];
@@ -54,60 +53,33 @@ const Careers = () => {
 
   return (
     <>
-      {/* SEO Helmet */}
+      {/* SEO */}
       <Helmet>
-        <title>Karir | PT Arsa Dalu Kreasi</title>
+        <title>Karir | MAQDIS Academy Qur'an</title>
         <meta
           name="description"
-          content="Temukan peluang karir di PT Arsa Dalu Kreasi, konsultan perencanaan & perizinan di Bandung. Jadilah bagian dari tim profesional dan inovatif kami."
+          content="Temukan peluang karir di MAQDIS Academy Qur'an. Bergabunglah sebagai pengajar atau staff administrasi untuk mendukung pendidikan Qur'an di Bandung."
         />
-        <meta
-          name="keywords"
-          content="lowongan kerja, karir Bandung, HRD, Drafter, Desainer Interior, PT Arsa Dalu Kreasi"
-        />
-        <meta name="author" content="PT Arsa Dalu Kreasi" />
-
-        {/* Canonical */}
-        <link rel="canonical" href="https://arsadalukreasi.com/careers" />
-
-        {/* Open Graph */}
-        <meta property="og:title" content="Karir | PT Arsa Dalu Kreasi" />
-        <meta
-          property="og:description"
-          content="Bergabunglah bersama PT Arsa Dalu Kreasi. Temukan peluang kerja di bidang perencanaan, perizinan, dan desain interior di Bandung."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://arsadalukreasi.com/careers" />
-        <meta property="og:image" content="https://arsadalukreasi.com/og-careers.jpg" />
-        <meta property="og:site_name" content="Ardexa" />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Karir | PT Arsa Dalu Kreasi" />
-        <meta
-          name="twitter:description"
-          content="Lowongan kerja di PT Arsa Dalu Kreasi. Bergabunglah bersama kami di Bandung untuk mendukung proyek konstruksi dan perizinan."
-        />
-        <meta name="twitter:image" content="https://arsadalukreasi.com/og-careers.jpg" />
+        <meta name="keywords" content="lowongan kerja, karir, guru tahfidz, staff administrasi, MAQDIS Academy Qur'an" />
+        <meta name="author" content="MAQDIS Academy Qur'an" />
+        <link rel="canonical" href="https://maqdisacademy.com/careers" />
       </Helmet>
 
       <Header />
 
       <div className="min-h-screen bg-gray-50 py-20 px-6 md:px-20">
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-10">
-          Karir di PT Arsa Dalu Kreasi
+          Karir di MAQDIS Academy Qur’an
         </h1>
         <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
-          Temukan peluang karir bersama kami dan jadilah bagian dari tim yang
-          inovatif, profesional, serta berdedikasi dalam bidang konstruksi,
-          desain, dan perizinan.
+          Bergabunglah bersama kami untuk mendukung pendidikan Qur’an dan membimbing generasi muda dalam menghafal Al-Qur’an.
         </p>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {careers.map((job) => (
             <div
               key={job.id}
-              className="bg-white shadow-md rounded-2xl p-6 flex flex-col justify-between"
+              className="bg-white shadow-md rounded-2xl p-6 flex flex-col justify-between border-t-4 border-orange-600"
             >
               <div>
                 <h2 className="text-xl font-semibold text-gray-800 mb-2">
@@ -119,13 +91,13 @@ const Careers = () => {
 
                 <div className="space-y-2 text-sm text-gray-500">
                   <p className="flex items-center gap-2">
-                    <MapPin className="w-4 h-4 text-blue-500" /> {job.location}
+                    <MapPin className="w-4 h-4 text-orange-600" /> {job.location}
                   </p>
                   <p className="flex items-center gap-2">
-                    <Briefcase className="w-4 h-4 text-blue-500" /> {job.type}
+                    <Briefcase className="w-4 h-4 text-orange-600" /> {job.type}
                   </p>
                   <p className="flex items-center gap-2">
-                    <Calendar className="w-4 h-4 text-blue-500" /> Deadline:{" "}
+                    <Calendar className="w-4 h-4 text-orange-600" /> Deadline:{" "}
                     {job.deadline}
                   </p>
                 </div>
@@ -136,24 +108,22 @@ const Careers = () => {
                   href="https://wa.me/6281537436666?text=Halo,%20saya%20ingin%20melamar"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full flex items-center justify-center gap-2 bg-blue-600 text-white py-2 px-4 rounded-xl hover:bg-blue-700 transition"
+                  className="w-full flex items-center justify-center gap-2 bg-orange-600 text-white py-2 px-4 rounded-xl hover:bg-orange-700 transition"
                 >
                   <Send className="w-4 h-4" /> Lamar Sekarang
                 </a>
 
                 <a
-                href={job.brochure}
-                download
-                className="w-full flex items-center justify-center gap-2 bg-gray-200 text-gray-700 py-2 px-4 rounded-xl hover:bg-gray-300 transition"
+                  href={job.brochure}
+                  download
+                  className="w-full flex items-center justify-center gap-2 bg-gray-200 text-gray-700 py-2 px-4 rounded-xl hover:bg-gray-300 transition"
                 >
-                <FileDown className="w-4 h-4" /> Unduh Brosur
+                  <FileDown className="w-4 h-4" /> Unduh Brosur
                 </a>
-
-
 
                 <button
                   onClick={() => setSelectedJob(job)}
-                  className="w-full flex items-center justify-center gap-2 border border-blue-600 text-blue-600 py-2 px-4 rounded-xl hover:bg-blue-50 transition"
+                  className="w-full flex items-center justify-center gap-2 border border-orange-600 text-orange-600 py-2 px-4 rounded-xl hover:bg-orange-50 transition"
                 >
                   <Info className="w-4 h-4" /> Lihat Detail
                 </button>
@@ -167,12 +137,11 @@ const Careers = () => {
       {selectedJob && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4">
           <div className="bg-white rounded-2xl shadow-lg max-w-lg w-full p-6 relative overflow-y-auto max-h-[90vh]">
-            {/* Close Button */}
             <button
               onClick={() => setSelectedJob(null)}
-              className="absolute top-3 right-3 rounded-full bg-white p-2 hover:bg-blue-600 transition-colors duration-200"
+              className="absolute top-3 right-3 rounded-full bg-white p-2 hover:bg-orange-600 transition-colors duration-200"
             >
-              <FaXmark className="w-5 h-5 text-blue-600 hover:text-white" />
+              <FaXmark className="w-5 h-5 text-orange-600 hover:text-white" />
             </button>
 
             <h2 className="text-2xl font-bold text-gray-800 mb-4">
@@ -182,13 +151,13 @@ const Careers = () => {
 
             <div className="space-y-2 text-sm text-gray-500 mb-6">
               <p className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-blue-500" /> {selectedJob.location}
+                <MapPin className="w-4 h-4 text-orange-600" /> {selectedJob.location}
               </p>
               <p className="flex items-center gap-2">
-                <Briefcase className="w-4 h-4 text-blue-500" /> {selectedJob.type}
+                <Briefcase className="w-4 h-4 text-orange-600" /> {selectedJob.type}
               </p>
               <p className="flex items-center gap-2">
-                <Calendar className="w-4 h-4 text-blue-500" /> Deadline: {selectedJob.deadline}
+                <Calendar className="w-4 h-4 text-orange-600" /> Deadline: {selectedJob.deadline}
               </p>
             </div>
 
@@ -203,7 +172,7 @@ const Careers = () => {
                       key={index}
                       className="flex items-start gap-2 text-gray-700 text-sm"
                     >
-                      <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <CheckCircle className="w-4 h-4 text-orange-600 mt-0.5 flex-shrink-0" />
                       <span>{item}</span>
                     </li>
                   ))}
@@ -213,20 +182,20 @@ const Careers = () => {
 
             <div className="flex gap-3">
               <a
-                  href="https://wa.me/6281537436666?text=Halo,%20saya%20ingin%20melamar"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 flex items-center justify-center gap-2 bg-blue-600 text-white py-2 px-4 rounded-xl hover:bg-blue-700 transition"
-                >
-                  <Send className="w-4 h-4" /> Lamar Sekarang
-                </a>
+                href="https://wa.me/6281537436666?text=Halo,%20saya%20ingin%20melamar"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 flex items-center justify-center gap-2 bg-orange-600 text-white py-2 px-4 rounded-xl hover:bg-orange-700 transition"
+              >
+                <Send className="w-4 h-4" /> Lamar Sekarang
+              </a>
               <a
                 href={selectedJob.brochure}
                 download
                 className="flex-1 flex items-center justify-center gap-2 bg-gray-200 text-gray-700 py-2 px-4 rounded-xl hover:bg-gray-300 transition"
-                >
+              >
                 <FileDown className="w-4 h-4" /> Unduh Brosur
-                </a>
+              </a>
             </div>
           </div>
         </div>
