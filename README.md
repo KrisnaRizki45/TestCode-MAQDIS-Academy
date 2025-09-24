@@ -1,0 +1,1 @@
+3 project tes dijadikan satu repository jadi jika ingin run cukup di cd atau arahkan ke project nya saja contoh /test1 terus npm run dev atau jika ingin build ke production/convert html cukup cd tiap project lalu npm run build
