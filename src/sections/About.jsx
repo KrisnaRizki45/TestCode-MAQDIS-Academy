@@ -21,41 +21,18 @@ const About = () => {
     >
       {/* SEO Helmet */}
       <Helmet>
-        {/* Title & Description */}
-        <title>About Us | PT Arsa Dalu Kreasi</title>
+        <title>About Us | Maqdis Academy</title>
         <meta
             name="description"
-            content="PT Arsa Dalu Kreasi adalah konsultan perencanaan & perizinan yang profesional, mendampingi Anda dari tahap perencanaan hingga legalitas proyek."
+            content="Maqdis Academy adalah yayasan di Bandung yang fokus pada pembelajaran Al-Qur'an dan kegiatan dakwah Islam, berdiri sejak 2001."
         />
         <meta
             name="keywords"
-            content="konsultan perencanaan, konsultan perizinan, PT Arsa Dalu Kreasi, ardexa, konsultan Bandung"
+            content="Maqdis Academy, Al-Qur'an, Dakwah Islam, Pendidikan Islam, Bandung"
         />
-        <meta name="author" content="PT Arsa Dalu Kreasi" />
-
-        {/* Canonical URL */}
-        <link rel="canonical" href="https://arsadalukreasi.com/about" />
-
-        {/* Open Graph */}
-        <meta property="og:title" content="About Us | PT Arsa Dalu Kreasi" />
-        <meta
-            property="og:description"
-            content="Kenali PT Arsa Dalu Kreasi, konsultan perencanaan & perizinan terpercaya untuk mendukung kelancaran proyek dan usaha Anda."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://arsadalukreasi.com/about" />
-        <meta property="og:image" content="https://arsadalukreasi.com/og-about.jpg" />
-        <meta property="og:site_name" content="Ardexa" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About Us | PT Arsa Dalu Kreasi" />
-        <meta
-            name="twitter:description"
-            content="PT Arsa Dalu Kreasi mendukung Anda dari tahap perencanaan hingga legalitas proyek dengan layanan konsultan profesional."
-        />
-        <meta name="twitter:image" content="https://arsadalukreasi.com/og-about.jpg" />
-        </Helmet>
+        <meta name="author" content="Maqdis Academy" />
+        <link rel="canonical" href="https://maqdis.academy/about" />
+      </Helmet>
 
       <Motion.div
         initial="hidden"
@@ -65,7 +42,7 @@ const About = () => {
       >
         <Motion.h1
           variants={slideUpVariants}
-          className='text-blue-600 text-2xl'
+          className='text-orange-600 text-2xl'
         >
           SELAMAT DATANG DI
         </Motion.h1>
@@ -73,13 +50,12 @@ const About = () => {
           variants={slideUpVariants}
           className='text-white uppercase text-[40px] font-bold'
         >
-          Ardexa
+          Maqdis Academy
         </Motion.h1>
-        <div className='w-[120px] h-[6px] bg-blue-600'></div>
+        <div className='w-[120px] h-[6px] bg-orange-600'></div>
         <p className='text-3xl italic text-gray-50 mt-[60px]'>
-          "Mewujudkan Perencanaan yang Terarah dan Legalitas yang Terjamin",
-          kami berkomitmen mendampingi Anda dari tahap perencanaan hingga
-          legalitas proyek.
+          "Membina Generasi Qur'ani", kami fokus pada pembelajaran Al-Qur'an
+          dan dakwah Islam untuk membentuk generasi berilmu dan berakhlak.
         </p>
       </Motion.div>
 
@@ -90,18 +66,17 @@ const About = () => {
         className='lg:w-[40%] w-full flex flex-col justify-center items-start gap-6'
       >
         <p className='text-white text-lg text-justify'>
-          PT ARSA DALU KREASI merupakan badan usaha yang
-          bergerak di bidang jasa konsultan perencanaan dan
-          konsultan perizinan. Perusahaan ini didirikan dengan tujuan
-          memberikan layanan profesional, efektif, dan sesuai dengan
-          ketentuan hukum yang berlaku, guna mendukung kelancaran
-          serta keberhasilan berbagai proyek pembangunan maupun
-          kegiatan usaha.
+          Maqdis Academy adalah singkatan dari Ma'had Al-Qur'an dan Dirosah
+          Islamiyah, sebuah yayasan di Kota Bandung yang didirikan pada tahun
+          2001 oleh <span className="font-bold">KH. Dr. Saiful Islam Mubarak, Lc., M.Ag.</span>.
+          Lembaga ini berfokus pada pembelajaran Al-Qur'an, termasuk cara membaca
+          dan memperbaiki bacaan Al-Qur'an, serta kegiatan dakwah Islam untuk
+          membina generasi Qur'ani yang berilmu dan berakhlak.
         </p>
         <Motion.button
           variants={zoomInVariants}
           onClick={() => setOpenModal("read")}
-          className='bg-blue-600 hover:bg-blue-900 text-white hover:text-black px-10 py-3
+          className='bg-orange-600 hover:bg-orange-800 text-white px-10 py-3
           rounded-lg font-bold text-black '
         >
           BACA SELENGKAPNYA
@@ -121,39 +96,33 @@ const About = () => {
                 initial="hidden"
                 animate="visible"
                 exit="exit"
-                className="bg-white rounded-2xl shadow-xl shadow-blue-600/20 
+                className="bg-white rounded-2xl shadow-xl shadow-orange-600/20 
                   p-8 max-w-lg w-full relative border border-gray-100"
               >
                 {/* Close Button */}
                 <button
                   onClick={() => setOpenModal(null)}
                   className="absolute top-3 right-3 rounded-full bg-white p-2 
-                  hover:bg-blue-600 transition-colors duration-200"
+                  hover:bg-orange-600 transition-colors duration-200"
                 >
-                  <FaTimes className="w-5 h-5 text-blue-600 hover:text-white" />
+                  <FaTimes className="w-5 h-5 text-orange-600 hover:text-white" />
                 </button>
 
                 {openModal === "read" && (
                   <div>
-                    <h2 className="text-2xl font-bold text-blue-600 mb-4">
-                      Tentang Kami
+                    <h2 className="text-2xl font-bold text-orange-600 mb-4">
+                      Tentang Maqdis Academy
                     </h2>
                     <p className="text-gray-700 leading-relaxed">
-                      <span className="font-bold">PT ARSA DALU KREASI</span> merupakan badan usaha yang
-                      bergerak di bidang jasa konsultan perencanaan dan
-                      konsultan perizinan. Perusahaan ini didirikan dengan tujuan
-                      memberikan layanan profesional, efektif, dan sesuai dengan
-                      ketentuan hukum yang berlaku, guna mendukung kelancaran
-                      serta keberhasilan berbagai proyek pembangunan maupun
-                      kegiatan usaha.
+                      <span className="font-bold">Maqdis Academy</span> adalah yayasan di Kota Bandung yang
+                      didirikan pada tahun 2001 oleh <span className="font-bold">KH. Dr. Saiful Islam Mubarak, Lc., M.Ag.</span>.
+                      Lembaga ini berfokus pada pembelajaran Al-Qur'an, termasuk cara membaca
+                      dan memperbaiki bacaan Al-Qur'an, serta kegiatan dakwah Islam
+                      untuk membina generasi Qur'ani yang berilmu dan berakhlak.
                       <br /> <br />
-                      Dalam pelaksanaan tugasnya,{" "}
-                      <span className="font-bold">PT ARSA DALU KREASI</span> didukung oleh tenaga ahli yang berkompeten,
-                      berpengalaman, serta memiliki pemahaman mendalam
-                      terhadap regulasi dan standar teknis. Kami senantiasa
-                      mengutamakan integritas, ketepatan waktu, serta kualitas
-                      hasil kerja sebagai landasan utama dalam memberikan
-                      pelayanan terbaik kepada klien.
+                      Kami senantiasa mengutamakan integritas, kualitas pembelajaran,
+                      dan pendampingan dakwah sebagai landasan utama dalam membentuk
+                      generasi muslim yang berakhlak mulia dan berilmu tinggi.
                     </p>
                   </div>
                 )}

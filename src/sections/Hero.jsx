@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import heroimg from "../assets/buildinghero.png";
-import backgroundImage from "../assets/homeimg.webp";
+import heroimg from "../assets/buildinghero.png"; // Bisa diganti hero Maqdis
+import backgroundImage from "../assets/homeimg.webp"; // Bisa diganti background Maqdis
 import { motion as Motion, AnimatePresence } from "framer-motion";
 import { slideUpVariants, zoomInVariants } from "./animation";
 import { FaTimes } from "react-icons/fa";
@@ -25,40 +25,18 @@ const Hero = () => {
       >
         {/* SEO Helmet */}
         <Helmet>
-          <title>ARDEXA | Konsultan Perencanaan & Perizinan</title>
+          <title>Maqdis Academy | Pembelajaran Al-Qur'an & Dakwah Islam</title>
           <meta
             name="description"
-            content="ARDEXA adalah konsultan perencanaan & perizinan profesional untuk mendukung proyek pembangunan & kegiatan usaha."
+            content="Maqdis Academy adalah yayasan di Bandung yang fokus pada pembelajaran Al-Qur'an dan kegiatan dakwah Islam, berdiri sejak 2001."
           />
           <meta
-          name="keywords"
-          content="konsultan perencanaan, konsultan perizinan, ARDEXA, legalitas usaha, konsultan Bandung"
-        />
-        <meta name="author" content="PT Arsa Dalu Kreasi" />
-
-        {/* Canonical URL */}
-        <link rel="canonical" href="https://arsadalukreasi.com/" />
-
-        {/* Open Graph (untuk FB, LinkedIn, WhatsApp) */}
-        <meta property="og:title" content="ARDEXA | Konsultan Perencanaan & Perizinan Profesional" />
-        <meta
-          property="og:description"
-          content="Kami mendampingi Anda dari tahap perencanaan hingga legalitas proyek dengan layanan konsultan terpercaya."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://arsadalukreasi.com/" />
-        <meta property="og:image" content="https://arsadalukreasi.com/og-image.jpg" />
-        <meta property="og:site_name" content="ARDEXA" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="ARDEXA | Konsultan Perencanaan & Perizinan Profesional" />
-        <meta
-          name="twitter:description"
-          content="Konsultan perencanaan & perizinan terpercaya untuk mendukung kelancaran proyek dan usaha Anda."
-        />
-        <meta name="twitter:image" content="https://arsadalukreasi.com/og-image.jpg" />
-      </Helmet>
+            name="keywords"
+            content="Maqdis Academy, Al-Qur'an, Dakwah Islam, Pendidikan Islam, Bandung"
+          />
+          <meta name="author" content="Maqdis Academy" />
+          <link rel="canonical" href="https://maqdis.academy/" />
+        </Helmet>
 
         {/* LEFT SIDE */}
         <Motion.div
@@ -70,23 +48,23 @@ const Hero = () => {
         >
           <Motion.h1
             variants={slideUpVariants}
-            className="text-blue-600 text-2xl"
+            className="text-orange-600 text-2xl"
           >
-            KAMI ADALAH KONSULTAN
+            MAQDIS ACADEMY
           </Motion.h1>
           <Motion.h1
             variants={slideUpVariants}
             className="text-white uppercase text-[50px] font-bold"
           >
-            kami akan membangun impian anda
+            Membina Generasi Qur'ani
           </Motion.h1>
-          <div className="w-[120px] h-[6px] bg-blue-600"></div>
+          <div className="w-[120px] h-[6px] bg-orange-600"></div>
           <p className="text-white text-[20px]">
-            ARDEXA merupakan badan usaha yang bergerak di bidang jasa konsultan
-            perencanaan dan konsultan perizinan. Perusahaan ini didirikan dengan
-            tujuan memberikan layanan profesional, efektif, dan sesuai dengan
-            ketentuan hukum yang berlaku, guna mendukung kelancaran serta
-            keberhasilan berbagai proyek pembangunan maupun kegiatan usaha.
+            Maqdis Academy adalah singkatan dari Ma'had Al-Qur'an dan Dirosah
+            Islamiyah, sebuah yayasan di Kota Bandung yang berdiri sejak tahun
+            2001 oleh KH. Dr. Saiful Islam Mubarak, Lc., M.Ag. Kami fokus pada
+            pembelajaran Al-Qur'an dan kegiatan dakwah Islam untuk mendukung
+            generasi muslim yang berilmu dan berakhlak.
           </p>
           <Motion.div
             initial="hidden"
@@ -97,7 +75,7 @@ const Hero = () => {
             <Motion.a
               variants={zoomInVariants}
               onClick={() => setOpenModal("read")}
-              className="block bg-blue-600 hover:bg-blue-900 hover:text-black 
+              className="block bg-orange-600 hover:bg-orange-800 hover:text-black 
               w-full sm:w-auto text-center
               px-6 sm:px-10 py-2 sm:py-3 rounded-lg
               text-white text-sm sm:text-base font-bold"
@@ -108,7 +86,7 @@ const Hero = () => {
             <Motion.a
               variants={zoomInVariants}
               onClick={() => setOpenModal("reach")}
-              className="block border-white hover:border-blue-600 hover:text-blue-600
+              className="block border-white hover:border-orange-600 hover:text-orange-600
               border-2 w-full sm:w-auto text-center
               px-6 sm:px-10 py-2 sm:py-3 rounded-lg
               text-white text-sm sm:text-base font-bold"
@@ -144,64 +122,52 @@ const Hero = () => {
                 initial="hidden"
                 animate="visible"
                 exit="exit"
-                className="bg-white rounded-2xl shadow-xl shadow-blue-600/20 
+                className="bg-white rounded-2xl shadow-xl shadow-orange-600/20 
                 p-8 max-w-lg w-full relative border border-gray-100"
               >
                 {/* Close Button */}
                 <button
                   onClick={() => setOpenModal(null)}
                   className="absolute top-3 right-3 rounded-full bg-white p-2 
-                  hover:bg-blue-600 transition-colors duration-200"
+                  hover:bg-orange-600 transition-colors duration-200"
                 >
-                  <FaTimes className="w-5 h-5 text-blue-600 hover:text-white" />
+                  <FaTimes className="w-5 h-5 text-orange-600 hover:text-white" />
                 </button>
 
                 {openModal === "read" && (
                   <div>
-                    <h2 className="text-2xl font-bold text-blue-600 mb-4">
-                      Tentang Kami
+                    <h2 className="text-2xl font-bold text-orange-600 mb-4">
+                      Tentang Maqdis Academy
                     </h2>
                     <p className="text-gray-700 leading-relaxed">
-                      <span className="font-bold">ARDEXA</span> merupakan badan
-                      usaha yang bergerak di bidang jasa konsultan perencanaan
-                      dan konsultan perizinan. Perusahaan ini didirikan dengan
-                      tujuan memberikan layanan profesional, efektif, dan sesuai
-                      dengan ketentuan hukum yang berlaku, guna mendukung
-                      kelancaran serta keberhasilan berbagai proyek pembangunan
-                      maupun kegiatan usaha.
-                      <br /> <br />
-                      Dalam pelaksanaan tugasnya,{" "}
-                      <span className="font-bold">ARDEXA</span> didukung oleh
-                      tenaga ahli yang berkompeten, berpengalaman, serta
-                      memiliki pemahaman mendalam terhadap regulasi dan standar
-                      teknis. Kami senantiasa mengutamakan integritas, ketepatan
-                      waktu, serta kualitas hasil kerja sebagai landasan utama
-                      dalam memberikan pelayanan terbaik kepada klien.
+                      Maqdis Academy adalah yayasan di Kota Bandung yang didirikan
+                      pada tahun 2001 oleh <span className="font-bold">KH. Dr.
+                      Saiful Islam Mubarak, Lc., M.Ag.</span> Lembaga ini berfokus
+                      pada pembelajaran Al-Qur'an, termasuk cara membaca dan
+                      perbaikan bacaan Al-Qur'an, serta kegiatan dakwah Islam
+                      untuk membina generasi Qur'ani yang berilmu dan berakhlak.
                     </p>
                   </div>
                 )}
 
                 {openModal === "reach" && (
                   <div className="space-y-3 text-gray-800">
-                    <h2 className="text-2xl font-bold text-blue-600 mb-4">
+                    <h2 className="text-2xl font-bold text-orange-600 mb-4">
                       Hubungi Kami
                     </h2>
                     <div className="flex items-center gap-3">
                       <span className="text-xl">📍</span>
-                      <p>
-                        Jl. Nata Endah Jl. Semboja No.P. 82, Margahayu Tengah,
-                        Kec. Margahayu, Kabupaten Bandung, Jawa Barat 40225
-                      </p>
+                      <p>Jl. Contoh Alamat No. 123, Bandung, Jawa Barat 40225</p>
                     </div>
 
                     <div className="flex items-center gap-3">
                       <span className="text-xl">📧</span>
-                      <p>arsadalu.office@gmail.com</p>
+                      <p>info@maqdis.academy</p>
                     </div>
 
                     <div className="flex items-center gap-3">
                       <span className="text-xl">📞</span>
-                      <p>+62 815-3743-6666</p>
+                      <p>+62 812-3456-7890</p>
                     </div>
                   </div>
                 )}

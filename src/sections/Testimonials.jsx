@@ -60,7 +60,7 @@ const Testimonials = () => {
         {/* Heading */}
         <Motion.h1
           variants={slideUpVariants}
-          className="text-blue-600 text-2xl"
+          className="text-orange-600 text-2xl"
         >
           TESTIMONI
         </Motion.h1>
@@ -68,11 +68,11 @@ const Testimonials = () => {
           variants={slideUpVariants}
           className="text-white uppercase text-[28px] sm:text-[40px] font-bold text-center"
         >
-          APA KATA KLIEN KAMI
+          APA KATA ALUMNI KAMI
         </Motion.h1>
         <Motion.div
           variants={slideUpVariants}
-          className="w-[120px] h-[6px] bg-blue-600"
+          className="w-[120px] h-[6px] bg-orange-600"
         ></Motion.div>
 
         {/* Cards */}
@@ -80,7 +80,7 @@ const Testimonials = () => {
           {/* Prev Button */}
           <button
             onClick={prevSlide}
-            className="absolute left-0 z-10 bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700"
+            className="absolute left-0 z-10 bg-orange-600 text-white p-3 rounded-full hover:bg-orange-700"
           >
             <FaChevronLeft />
           </button>
@@ -122,8 +122,8 @@ const Testimonials = () => {
                       <h3 className="text-white font-semibold uppercase text-sm sm:text-base">
                         {client.name}
                       </h3>
-                      <p className="text-blue-500 text-xs sm:text-sm">
-                        {client.position}
+                      <p className="text-orange-500 text-xs sm:text-sm">
+                        {client.post}
                       </p>
                     </div>
                   </div>
@@ -154,7 +154,7 @@ const Testimonials = () => {
           {/* Next Button */}
           <button
             onClick={nextSlide}
-            className="absolute right-0 z-10 bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700"
+            className="absolute right-0 z-10 bg-orange-600 text-white p-3 rounded-full hover:bg-orange-700"
           >
             <FaChevronRight />
           </button>
@@ -170,7 +170,7 @@ const Testimonials = () => {
                 setActiveIndex(i);
               }}
               className={`w-3 h-3 rounded-full ${
-                i === activeIndex ? "bg-blue-600" : "bg-gray-400"
+                i === activeIndex ? "bg-orange-600" : "bg-gray-400"
               }`}
             ></button>
           ))}

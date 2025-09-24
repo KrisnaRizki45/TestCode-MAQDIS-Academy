@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion as Motion, AnimatePresence } from "framer-motion";
 import { slideUpVariants, zoomInVariants } from "./animation";
-import { trusted } from "../export";
+import { trusted } from "../export"; // pastikan trusted array disesuaikan untuk Maqdis
 import { FaTimes } from "react-icons/fa";
 
 const Working = () => {
@@ -19,7 +19,7 @@ const Working = () => {
         {/* Heading */}
         <Motion.h1
           variants={slideUpVariants}
-          className="text-blue-600 text-2xl"
+          className="text-orange-600 text-2xl"
         >
           MENGAPA MEMILIH KAMI
         </Motion.h1>
@@ -27,11 +27,11 @@ const Working = () => {
           variants={slideUpVariants}
           className="text-black uppercase text-[32px] sm:text-[40px] font-bold text-center"
         >
-          KELEBIHAN KAMI
+          KELEBIHAN MAQDIS ACADEMY
         </Motion.h1>
         <Motion.div
           variants={slideUpVariants}
-          className="w-[120px] h-[6px] bg-blue-600"
+          className="w-[120px] h-[6px] bg-orange-600"
         ></Motion.div>
 
         {/* Trusted Section */}
@@ -51,11 +51,11 @@ const Working = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => setSelectedItem(item)}
-                className="flex flex-col justify-center items-center gap-5 border border-blue-200 
+                className="flex flex-col justify-center items-center gap-5 border border-orange-200 
                 shadow-sm hover:shadow-lg transition-all duration-300 rounded-xl p-6 cursor-pointer bg-white"
               >
-                <div className="w-16 h-16 flex items-center justify-center rounded-full bg-blue-50 border-2 border-blue-600">
-                  <Icon className="w-8 h-8 text-blue-600" />
+                <div className="w-16 h-16 flex items-center justify-center rounded-full bg-orange-50 border-2 border-orange-600">
+                  <Icon className="w-8 h-8 text-orange-600" />
                 </div>
                 <h1 className="text-xl font-bold uppercase text-center">{item.title}</h1>
                 <p className="text-[16px] text-center text-gray-600">{item.about}</p>
@@ -86,14 +86,14 @@ const Working = () => {
               <button
                 onClick={() => setSelectedItem(null)}
                 className="absolute top-3 right-3 rounded-full bg-white p-2 
-                hover:bg-blue-600 transition-colors duration-200"
+                hover:bg-orange-600 transition-colors duration-200"
               >
-                <FaTimes className="w-5 h-5 text-blue-600 hover:text-white" />
+                <FaTimes className="w-5 h-5 text-orange-600 hover:text-white" />
               </button>
 
               {/* Icon & Title */}
               <div className="flex items-center gap-4 mb-4">
-                <selectedItem.icon className="w-10 h-10 text-blue-600" />
+                <selectedItem.icon className="w-10 h-10 text-orange-600" />
                 <h2 className="text-xl sm:text-2xl font-bold">{selectedItem.title}</h2>
               </div>
 

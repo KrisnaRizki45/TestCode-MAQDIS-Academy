@@ -63,7 +63,7 @@ const Contact = () => {
         >
           <Motion.h1
             variants={slideUpVariants}
-            className="text-blue-600 text-2xl font-semibold tracking-wide"
+            className="text-orange-600 text-2xl font-semibold tracking-wide"
           >
             HUBUNGI KAMI
           </Motion.h1>
@@ -71,26 +71,26 @@ const Contact = () => {
             variants={slideUpVariants}
             className="text-black uppercase text-[32px] lg:text-[40px] font-bold leading-tight"
           >
-            Hubungi Kami Untuk Pertanyaan Apapun
+            Hubungi Kami Untuk Pertanyaan Akademik
           </Motion.h1>
-          <div className="w-[120px] h-[6px] bg-blue-600 rounded-md"></div>
+          <div className="w-[120px] h-[6px] bg-orange-600 rounded-md"></div>
           <p className="text-lg text-gray-700 mt-4 leading-relaxed">
-            Ardexa siap membantu Anda mewujudkan proyek dengan
-            solusi arsitektur, teknik, dan perencanaan terbaik. Hubungi kami
-            untuk konsultasi, penawaran, atau pertanyaan terkait layanan kami.
+            MIM siap membantu Anda mendapatkan informasi mengenai program
+            akademik, pendaftaran, dan kegiatan edukasi. Hubungi kami untuk
+            konsultasi, pertanyaan, atau informasi lainnya.
           </p>
 
           {/* Google Map */}
           <div className="w-full mt-6 rounded-xl overflow-hidden shadow-lg border border-gray-200">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.439023376686!2d107.56478467499677!3d-6.9574264930429575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68ef000223f79d%3A0xe3d0db331934f33!2sPT%20ARSA%20DALU%20KREASI!5e0!3m2!1sen!2sid!4v1756294475296!5m2!1sen!2sid"
+              src="https://www.google.com/maps/embed?pb=!1m18!...MIM_LINK..." // ganti dengan link MIM sebenarnya
               width="100%"
               height="250"
               style={{ border: "0" }}
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Lokasi Ardexa"
+              title="Lokasi MIM"
             ></iframe>
           </div>
         </Motion.div>
@@ -100,7 +100,7 @@ const Contact = () => {
           initial="hidden"
           whileInView="visible"
           variants={slideUpVariants}
-          className="lg:w-[40%] w-full bg-white shadow-xl rounded-2xl p-6 mt- border border-gray-100"
+          className="lg:w-[40%] w-full bg-white shadow-xl rounded-2xl p-6 border border-gray-100"
         >
           <Motion.form
             initial="hidden"
@@ -109,14 +109,13 @@ const Contact = () => {
             className="flex flex-col gap-4 w-full"
             onSubmit={handleSubmit}
           >
-            <label></label>
             <input
               type="text"
               name="fullName"
               placeholder="Nama Lengkap"
               value={formData.fullName}
               onChange={handleChange}
-              className="px-5 py-3 border border-gray-300 focus:border-blue-600 text-black rounded-lg w-full outline-none text-sm"
+              className="px-5 py-3 border border-gray-300 focus:border-orange-600 text-black rounded-lg w-full outline-none text-sm"
               required
             />
             <input
@@ -125,7 +124,7 @@ const Contact = () => {
               placeholder="Alamat Email"
               value={formData.email}
               onChange={handleChange}
-              className="px-5 py-3 border border-gray-300 focus:border-blue-600 text-black rounded-lg w-full outline-none text-sm"
+              className="px-5 py-3 border border-gray-300 focus:border-orange-600 text-black rounded-lg w-full outline-none text-sm"
               required
             />
             <input
@@ -134,7 +133,7 @@ const Contact = () => {
               placeholder="Nomor Telepon"
               value={formData.phone}
               onChange={handleChange}
-              className="px-5 py-3 border border-gray-300 focus:border-blue-600 text-black rounded-lg w-full outline-none text-sm"
+              className="px-5 py-3 border border-gray-300 focus:border-orange-600 text-black rounded-lg w-full outline-none text-sm"
             />
             <textarea
               name="message"
@@ -142,13 +141,13 @@ const Contact = () => {
               rows="8"
               value={formData.message}
               onChange={handleChange}
-              className="px-5 py-3 border border-gray-300 focus:border-blue-600 text-black rounded-lg w-full outline-none text-sm "
+              className="px-5 py-3 border border-gray-300 focus:border-orange-600 text-black rounded-lg w-full outline-none text-sm"
               required
             />
             <Motion.button
               type="submit"
               variants={zoomInVariants}
-              className="bg-blue-600 hover:bg-blue-900 text-white px-8 py-3 font-semibold rounded-lg w-full transition-all duration-300 shadow-md"
+              className="bg-orange-600 hover:bg-orange-800 text-white px-8 py-3 font-semibold rounded-lg w-full transition-all duration-300 shadow-md"
             >
               Kirim Pesan
             </Motion.button>
@@ -173,14 +172,14 @@ const Contact = () => {
               className={`bg-white px-8 py-6 rounded-2xl shadow-2xl text-center w-[90%] max-w-sm border-2
                 ${
                   notification.type === "success"
-                    ? "border-blue-600"
+                    ? "border-orange-600"
                     : "border-red-600"
                 }`}
             >
               {/* Icon */}
               <div className="text-6xl mb-4">
                 {notification.type === "success" ? (
-                  <FaCheckCircle className="text-blue-600 mx-auto" />
+                  <FaCheckCircle className="text-orange-600 mx-auto" />
                 ) : (
                   <FaTimesCircle className="text-red-600 mx-auto" />
                 )}
@@ -190,7 +189,7 @@ const Contact = () => {
               <h2
                 className={`text-xl font-bold mb-2 ${
                   notification.type === "success"
-                    ? "text-blue-600"
+                    ? "text-orange-600"
                     : "text-red-600"
                 }`}
               >

@@ -6,8 +6,6 @@ import { ThreeDot } from "react-loading-indicators";
 const Header = lazy(() => import("./sections/Header"));
 const Hero = lazy(() => import("./sections/Hero"));
 const About = lazy(() => import("./sections/About"));
-const Service = lazy(() => import("./sections/Service"));
-const Portfolio = lazy(() => import("./sections/Portfolio"));
 const Trusted = lazy(() => import("./sections/Trusted"));
 const Testimonials = lazy(() => import("./sections/Testimonials"));
 const Contact = lazy(() => import("./sections/Contact"));
@@ -31,8 +29,6 @@ function Home() {
       <Header />
       <Hero />
       <About />
-      <Service />
-      <Portfolio />
       <Trusted />
       <Testimonials />
       <Contact />
